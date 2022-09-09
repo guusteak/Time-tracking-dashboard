@@ -50,6 +50,7 @@
 .jeremy__header{
     margin: 10px 20px;
     font-size: 3rem;
+    font-weight: 400;
 }
 .container__bottom{
     height: 20%;
@@ -58,8 +59,16 @@
     flex-direction: column;
     gap: 5%;
     margin-left: 20px;
+    color: hsl(236, 100%, 87%);
+}
+.container__bottom > *:hover{
+    color: white;
+    cursor: pointer;
 }
 
+.container__bottom--active{
+    color: white;
+}
 .element{
     overflow: hidden;
     border-radius: 15px;
@@ -177,4 +186,9 @@
 .element__past{
     font-size: 0.8rem;
     margin-top: 10px;
+}
+
+.element__about:hover{
+    cursor: pointer;
+    background-color: hsl(235, 45%, 61%);
 }
