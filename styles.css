@@ -192,3 +192,46 @@
     cursor: pointer;
     background-color: hsl(235, 45%, 61%);
 }
+
+@media only screen and (max-width: 400px){
+    .page{
+        min-width: 300px;
+        min-height: 1800px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        min-width: 300px;
+        gap: 10px;     
+    }
+    .jeremy{
+        display: flex;
+    }
+    .jeremy__div{
+        display: flex;
+        flex-direction: column;
+    }
+    .jeremy__header{
+        font-size: 2rem;
+    }
+    .container__bottom{
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .container__person{
+        min-height: 200px;
+    }
+    
+    .element__time > *{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+    /* It is very important to NOT change this order*/
+    .element__time--none{
+        display: none;
+    }
+}
